@@ -1,75 +1,34 @@
-# Bleghdit
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## A reddit clone I made as a capstone project (not a 1:1 clone of reddit)
+## Getting Started
 
-## https://bleghdit.site
+First, run the development server:
 
-Built with:
-
-Frontend:
-
-- NextJS (ReactJS)
-- Typescript
-- Redux-toolkit
-- SWR
-- Styled with Material-UI v5
-
-Backend:
-
-- NodeJS
-- Express
-- Typescript
-- PostgresSQL
-- TypeORM
-- Passport Authentication (Local)
-- Cloudinary for Image cloud hosting
-
-## Development
-
-clone the repo:
-
-```sh
-git clone git@github.com:Jomark031497/bleghdit.git
-```
-
-install all packages/library needed:
-
-```sh
-npm run install-server && npm run install-client
-```
-
-Run the server anc client (run the client script, watch script and the server script):
-
-```sh
+```bash
 npm run dev
+# or
+yarn dev
 ```
 
-Environment Variables:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Frontend:
-Inside the client folder, copy the contents of .env.example and create a .env.local file:
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-```
-NEXT_PUBLIC_SERVER_BASE_URL=<URL OF YOUR SERVER (ex. http://localhost:8080)>
-NEXT_PUBLIC_CLIENT_BASE_URL=<URL OF YOUR CLIENT (typically: http://localhost:3000)
-APP_DOMAIN=localhost
-```
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Backend:
-In the root folder, copy the contents of .env.example and create a .env file:
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-```
-SECRET=<SECRET CODE FOR THE APP>
-CLIENT_URL=<URL OF YOUR CLIENT (typically: http://localhost:3000)
-PORT=<PORT TO RUN THE SERVER (ex. 8080)>
-SERVER_URL=<URL OF YOUR SERVER (ex. http://localhost:8080)>
-TYPEORM_HOST=<host for postgresSQL DB>
-TYPEORM_USERNAME=<Postgres USERNAME>
-TYPEORM_PASSWORD=<Postgres PASSWORD>
-TYPEORM_DATABASE=<Postgres DATABASE NAME>
-TYPEORM_PORT=<Postgres PORT (default: 5432)>
-CLOUD_NAME=<CLOUDINARY NAME>
-CLOUD_API_KEY=<CLOUDINARY API KEY>
-CLOUD_SECRET=<CLOUDINARY SECRET KEY>
-NODE_ENV=<Node Environment (ex. development)>
-```
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
